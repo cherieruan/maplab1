@@ -53,21 +53,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             .snippet("In 2017, a new family of ducks were born!"))
             .setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET));
 
-        /*LatLng start1 = new LatLng(46, -120);
-        LatLng fin1 = new LatLng(50, -122.307803);
-        LatLng fin2 = new LatLng(47.6, -122.2888);
-        PolylineOptions lines = new PolylineOptions();
-        lines.color(Color.WHITE);
-        lines.width(200);
-        lines.add(start1);
-        lines.add(fin1);
-        lines.add(fin2);*/
-
         Polyline line = mMap.addPolyline(new PolylineOptions()
             .add(new LatLng(47.653, -122.3078025), new LatLng(47.653802, -122.307803))
             .add(new LatLng(47.653, -122.3078025), new LatLng(47.653802, -122.3077))
                 .add(new LatLng(47.653802, -122.3077), new LatLng(47.653, -122.3076))
-                .add(new LatLng(47.653, -122.3), new LatLng(47.653802, -122.30))
+                //.add(new LatLng(47.653, -122.3), new LatLng(47.653802, -122.30))
             .width(5)
             .color(Color.WHITE)
             .geodesic(true)
